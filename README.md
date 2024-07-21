@@ -362,7 +362,7 @@ The key idea was:
 
 
 ## `Benchmarking`:
-#### System Specs: (a tiny humble brag... PC assembled myself : )  ) 
+#### System Specs:
 
 Ryzen 7 5800x, 64 GB DDR4 RAM, C drive is M.2 NVME (Python processes and IDE) (gen 3.0 drive in Gen 4.0 M.2 slot... yeah...I know 🤦‍♂️)
 
