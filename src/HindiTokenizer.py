@@ -57,7 +57,7 @@ class HindiTokenizer:
         self.pattern = SIMPLE_HINDI_PATTERN if pattern is None else pattern
         self.compiled_pattern = re.compile(self.pattern, re.IGNORECASE, re.UNICODE)
         self.inverse_special_tokens = {}
-        self.merges = None
+        self.merges = {}
         self.vocab = None
         self.encoding = encoding
         self.hindi_varnmala_and_key_units = dedent("""
