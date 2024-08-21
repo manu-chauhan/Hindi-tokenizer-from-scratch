@@ -221,7 +221,7 @@ src: https://www.regular-expressions.info/unicode.html
 
 Note: Previously used Git Large File System, easy to use and track specific files
 
-GDrive link for dataset: [Dataset Download](https://drive.google.com/drive/folders/1KD7v4eW2ZKQ0Re_6lXRuaaVswvS3IFIh?usp=sharing)
+GDrive link for dataset: [Dataset Download](https://drive.google.com/file/d/1yaAeNfw-8NZZwrcs_tWrBxTIHyI2n2k4/view?usp=sharing)
 
 Note: file named as 01... and Z are intentional to order reading those specific files, for example 01 has Hindi alphabet (again) and their overview, while files with 'Z' have Hinglish text and hence must be used to build vocab at later stages (after learning sufficient Hindi and English separately).
 
