@@ -141,7 +141,7 @@ def main():
 
     print(f"Encoded total len: {total_encoded_len}")
 
-    print(f"Ratio of raw data for : {str(NUMBER_OF_BATCHES) + ' for each batch size :' + str(BATCH_SIZE)
+    print(f"Ratio of raw data for : {str(NUMBER_OF_BATCHES) + ' for each batch size :' + str(BATCH_SIZE)")
     if isinstance(NUMBER_OF_BATCHES, int) else 'entire dataset'} compressed: {total_raw_text_len / total_encoded_len}")
 
 
