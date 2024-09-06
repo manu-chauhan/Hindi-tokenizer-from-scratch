@@ -135,14 +135,12 @@ def main():
 
         print(f"\nbatch : {batch_idx} len:{raw_batch_data_len}...encoded len: {encoded_batch_data_len}...\n")
 
-    print(f"\n\n================================\n"
-          f"Total len of text in Hindi ran for {str(NUMBER_OF_BATCHES) + ' batches'
-          if isinstance(NUMBER_OF_BATCHES, int) else 'all batches for entire dataset'} is : {total_raw_text_len}")
+    print(f"\n\n================================\nTotal len of text in Hindi ran for {str(NUMBER_OF_BATCHES)}  batches " if isinstance(NUMBER_OF_BATCHES, int) else f"all batches for entire dataset is : {total_raw_text_len}")
 
     print(f"Encoded total len: {total_encoded_len}")
 
-    print(f"Ratio of raw data for : {str(NUMBER_OF_BATCHES) + ' for each batch size :' + str(BATCH_SIZE)")
-    if isinstance(NUMBER_OF_BATCHES, int) else 'entire dataset'} compressed: {total_raw_text_len / total_encoded_len}")
+    print(f"Ratio of raw data for : {str(NUMBER_OF_BATCHES)} for each batch size : {BATCH_SIZE}" if isinstance(NUMBER_OF_BATCHES, int) else f"entire dataset compressed: {total_raw_text_len / total_encoded_len}")
+
 
 
 if __name__ == "__main__":
