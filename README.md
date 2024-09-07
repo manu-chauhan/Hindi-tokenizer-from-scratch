@@ -360,6 +360,16 @@ The key idea was:
 4. Some `dependent vowels and sub-words` are still leaned in higher (later) ranges ([ै][र] -> [ैर]) ([ि�][�] -> [िद] 2325
 [िश][न] -> [िशन] 2326)
 
+## Complete dataset encode
+Note: after 13th batch vocab (stopped increasing after 4 or 5th batch and most were just replacements instead of new words)
+  
+  all batches for entire dataset is (total_raw_text_len of strings) : 3834180903
+  
+  Encoded total len (total_encoded_len): 1173816736
+  
+  entire dataset compressed: 3.266422078855076
+  
+  Total original word count (token_count += sum(len(line.split()) for line in batch_data)) : 750299135
 
 ## `Benchmarking`:
 #### System Specs:
