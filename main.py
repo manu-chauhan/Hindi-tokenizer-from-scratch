@@ -124,8 +124,12 @@ def main():
     result = utilities.read_from_all_files(all_files, batch_size=BATCH_SIZE, batch_num=NUMBER_OF_BATCHES)
     total_raw_text_len = total_encoded_len = 0
 
+    token_count = 0
     for batch_idx, batch_data in enumerate(result):
-        batch_text = "".join(batch_data)  # need to join to get single str as batch is list of lines of text
+        token_count += sum(len(line.split()) for line in batch_data)
+
+        batch_text = " ".join(batch_data)  # need to join to get single str as batch is list of lines of text
+        
         raw_batch_data_len = len(batch_text)
         total_raw_text_len += raw_batch_data_len
 
@@ -141,7 +145,8 @@ def main():
 
     print(f"Ratio of raw data for : {str(NUMBER_OF_BATCHES)} for each batch size : {BATCH_SIZE}" if isinstance(NUMBER_OF_BATCHES, int) else f"entire dataset compressed: {total_raw_text_len / total_encoded_len}")
 
-
+    print(f"\nTotal token_count : {token_count}")
 
 if __name__ == "__main__":
     main()
+
